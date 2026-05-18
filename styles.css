@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+@font-face {
+  font-family: 'pixel';
+  src: url('https://static.wfonts.com/data/2016/05/09/pixelpoint/pixel.ttf') format('ttf');
+  font-display: swap;
+}
+
+.game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+canvas {
+    background-color: #000;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.hidden {
+    display: none !important;
+}
+
+#game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+#restart-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+#restart-btn:hover {
+    background: #ddd;
+}
